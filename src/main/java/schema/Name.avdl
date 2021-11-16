@@ -1,0 +1,8 @@
+@namespace("com.pojo")
+protocol PharmcyProtocol {
+	record Name {
+		union{string, null} fullName;
+		union{string, null} firstName;
+		union{string, null} lastName;
+	}
+}

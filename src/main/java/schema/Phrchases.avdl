@@ -1,0 +1,12 @@
+@namespace("com.pojo")
+protocol PharmcyProtocol {
+	import idl "Name.avdl";
+
+	record Phrchases {
+		int storeId;
+		double amount;
+		string generic;
+		union{string, null} purchaseBy;
+		string purchaseData;
+	}
+}

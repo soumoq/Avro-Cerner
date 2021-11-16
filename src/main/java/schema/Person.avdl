@@ -1,0 +1,15 @@
+@namespace("com.pojo")
+protocol PharmcyProtocol {
+	import idl "Name.avdl";
+	import idl "Phrchases.avdl";
+
+	record Persion {
+		int persionId;
+		union{string, null} gender;
+		union{Name, null} name;
+		union{array<string>, null} addresses;
+		union{array<long>, null} phones = [];
+		string email;
+		array<Phrchases> purchases = [];
+	}
+}
